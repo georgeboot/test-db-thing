@@ -13,7 +13,7 @@ class TestDB implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    public $tries = 60;
+    public $tries = 4;
 
     public function handle()
     {
