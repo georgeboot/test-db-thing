@@ -5,9 +5,11 @@ environments:
         memory: 1024
         cli-memory: 512
         runtime: php-7.4
+        timeout: 5
         scheduler: false
-        database: object-detection
-        queue-concurrency: 5
+        # database: object-detection
+        queues: false
+        # queue-concurrency: 5
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
