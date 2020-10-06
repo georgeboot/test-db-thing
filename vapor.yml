@@ -7,6 +7,7 @@ environments:
         runtime: php-7.4
         scheduler: false
         database: object-detection
+        domain: test-db-thing.gymme.nl
         queue-concurrency: 5
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
